@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  admin:
+    network_mode: "host"
+    build:
+      context: .
+      network: host
+    ports:
+      - "9528:9528"
+    restart: always
